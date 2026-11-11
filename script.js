@@ -3,6 +3,7 @@ import SpeedTest from "@cloudflare/speedtest";
 
 const startBtn = document.getElementById("startBtn");
 const statusText = document.getElementById("status");
+startBtn.addEventListener("click", startTest);
 
 let tester;
 
