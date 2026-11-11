@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Internet Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>⚡ NetSpeed</h2>
+    <p>Check your Internet speed</p>
+  </header>
+
+  <main class="container">
+    <div class="speed-circle">
+      <div class="speed-content">
+        <h1 id="speed">0.00</h1>
+        <span>Mbps</span>
+      </div>
+    </div>
+
+    <p id="status">Ready to test your connection</p>
+
+    <button id="startBtn" onclick="startTest()">
+      START TEST
+    </button>
+
+    <div class="results">
+      <div class="result">
+        <h3>↓ Download</h3>
+        <p id="download">-- Mbps</p>
+      </div>
+
+      <div class="result">
+        <h3>↑ Upload</h3>
+        <p id="upload">-- Mbps</p>
+      </div>
+
+      <div class="result">
+        <h3>◉ Ping</h3>
+        <p id="ping">-- ms</p>
+      </div>
+
+      <div class="result">
+        <h3>〰 Jitter</h3>
+        <p id="jitter">-- ms</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Powered by NetSpeed | Internet Speed Test</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
